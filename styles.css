@@ -1,0 +1,179 @@
+body {
+    font-family: 'Rajdhani', sans-serif !important;
+    background-color: #0a0a0f !important;
+    color: #ffffff !important;
+    line-height: 1.6;
+}
+/* ===== LIGHT MODE / DARK MODE ===== */
+body.light-mode {
+    background-color: #f5f5f5 !important;
+    color: #1a1a1a !important;
+}
+
+body.light-mode .navbar {
+    background: rgba(255, 255, 255, 0.85) !important;
+    border-bottom: 1px solid rgba(168, 85, 247, 0.2) !important;
+}
+
+body.light-mode .title1 {
+    color: #1a1a1a !important;
+}
+
+body.light-mode .title2 {
+    color: #a855f7 !important;
+}
+
+body.light-mode .nav-link {
+    color: #4a4a4a !important;
+}
+
+body.light-mode .nav-link:hover,
+body.light-mode .nav-link.active {
+    color: #1a1a1a !important;
+}
+
+body.light-mode .nav-link.retro-link {
+    color: #ff006e !important;
+}
+
+body.light-mode .nav-icon {
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #4a4a4a !important;
+}
+
+body.light-mode .nav-icon:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    border-color: #a855f7 !important;
+    color: #1a1a1a !important;
+}
+/* */
+
+
+/* hadhi nav bar */
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.85) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(168, 85, 247, 0.1) !important;
+    transition: all 0.3s ease;
+    padding: 1rem 0 !important;
+}
+/* hadha el logo */
+.title1 {
+    font-family: 'Orbitron', sans-serif !important;
+    font-size: 1.75rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.05em !important;
+    color: #ffffff !important;
+}
+
+.title2 {
+    color: #a855f7 !important;
+}
+/* */
+/* hadhom el links */
+/* el hover mrgla zada */
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.nav-link {
+    color: #a0a0b8 !important;
+    text-decoration: none !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+    transition: all 0.2s ease !important;
+    position: relative;
+    padding: 0.5rem 0 !important;
+    white-space: nowrap;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #a855f7, #06b6d4) !important;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff !important;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+.nav-link.retro-link {
+    color: #ff006e !important;
+    font-family: 'VT323', monospace !important;
+    font-size: 1.25rem !important;
+}
+
+.nav-link.retro-link::after {
+    background: #ff006e !important;
+}
+/* */
+
+/* hadhi partie el icons */
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: right;
+    margin-left: 133px;
+}
+
+.nav-icon {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #a0a0b8 !important;
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 0.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.2s ease !important;
+    position: relative;
+}
+/* partie el hover lel icons */
+.nav-icon:hover {
+    background: rgba(168, 85, 247, 0.1) !important;
+    border-color: #a855f7 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+/* hadhi haki el cercle el purple fog el cart */
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #a855f7 !important;
+    color: white !important;
+    font-size: 0.7rem !important;
+    font-weight: 700 !important;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* */ 
