@@ -31,8 +31,8 @@
                 <div class="col-12 col-md-4 col-lg-6">
                     <div class="nav-links">
                         <a href="./index.html" class="nav-link ">Home</a>
-                        <a href="./pcs.html" class="nav-link active">PCs & Laptops</a>
-                        <a href="./components.html" class="nav-link">Components</a>
+                        <a href="./pcs.html" class="nav-link">PCs & Laptops</a>
+                        <a href="./components.html" class="nav-link active">Components</a>
                         <a href="./accessories.html" class="nav-link">Accessories</a>
                         <a href="./retro.html" class="nav-link retro-link">Retro Zone</a>
                     </div>
@@ -44,7 +44,7 @@
                         </button>
                         <button class="nav-icon cart-btn">
                             <i class="fa-solid fa-shopping-cart"></i>
-                            <span class="cart-count">0</span>
+                            <span class="cart-count" id="count">0</span>
                         </button>
                         <button class="nav-icon dark-btn">
                             <i class="fa-solid fa-moon"></i>
@@ -359,8 +359,8 @@ Powered by the latest RTX 5090 GPU and hand-selected, top-tier components — pr
             <div class="col-10 d-flex align-items-center gap-3">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <h2 class="carttitle">Your Cart</h2>
-                <span class="cart-count">0</span>
-                <div class="badgey"><span class="cartitems">Item(s)</span></div>
+                
+                <div class="badgey"><span class="cartitems"><span class="cart-count" id="count">0</span>Item(s)</span></div>
             </div>
             <div class="col-2 d-flex justify-content-end">
                 <button class="close-btn" id="cartclose">
